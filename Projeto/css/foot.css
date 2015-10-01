@@ -1,0 +1,79 @@
+#footer{
+	position: absolute;
+	background-color: #000000;
+	height: 8%;
+	width: 100%;
+	bottom: 1px;
+	border-bottom-left-radius:15px; 
+	border-bottom-right-radius: 15px; 
+}
+#pay {
+	position: absolute;
+	left: 1%;
+	bottom: 60%;
+	height: 40%;
+	width: 20%;
+	font-size: 1.08em;
+	color:#FFFFFF;
+}
+#pay > p {
+	position: absolute;
+	top: -54%;
+}
+#paymod{
+
+	position: absolute;
+	height: 50%;
+	width: 80%;
+	top: 45%;
+	left: 5%;
+}
+#master{
+	position: absolute;
+	height: 2em;
+	width: 3em;
+	left: 0.5%;
+	top: 8%;
+}
+#visa{
+	position: absolute;
+	height: 2.2em;
+	width: 2.3em;
+	left: 7%;
+	top: 2%;
+}
+#gold{
+	position: absolute;
+	height: 1.5em;
+	width: 1.5em;
+	left: 71%;
+	top: 15%;
+}
+#payboleto{
+	position: absolute;
+	height: 1.5em;
+	height: 1.5em;
+	top: 20%;
+	left: 40%;
+}
+#paytype{
+	color: #c8c8c8;
+}
+#cards{
+	position: absolute;
+	font-size: 0.9em;
+	top: 4%;
+	left: 6%;
+}
+#others{
+	position: absolute;
+	font-size: 0.9em;
+	top: 4%;
+	left: 62%;
+}
+#boleto{
+	position: absolute;
+	font-size: 0.9em;
+	top: 4%;
+	left: 37%;
+}

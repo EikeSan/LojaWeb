@@ -1,0 +1,191 @@
+
+#body{
+	position: absolute;
+	border: none 1px;
+	width: 60%;
+	right: 20%;
+	height: 120%;
+	color: grey;
+	border-top: none;
+	/*background-color: blue;*/
+}
+#header{
+	/*background-color: blue;*/
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	
+}
+
+#headertop {
+	position: relative;
+	top: -3%;
+	/*background-color: #3c4543;*/
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#navbar {
+	position: relative;
+	top:10px;
+	left:50%;
+	margin-left:-254px;
+}
+#navbar > ul{
+	list-style-type: none;
+	position: relative;
+	margin: -10px;
+}
+
+#navbar > ul > li {
+	display: inline;
+	border: 2px solid #000000;
+	padding: 5px;
+	border-radius: 5px 5px;
+	background-color: #d55534;
+}
+
+#navbar >ul > li > a{
+	text-decoration: none;
+	font-family: Futura, Tahoma, sans-serif;
+	color: #ffffff;
+}
+
+#headercenter{
+	background-color: #000000;
+	height: 80px;
+	top: 10%;
+	position: relative;
+	border-radius: 15px;
+	
+}
+
+#headerlogo > a > h6 {
+	color: #FFFFFF;
+	position: absolute;
+	top: 49%;
+	left: 20%;
+	text-align: center;
+}
+#headerlogo{
+	position: absolute;
+	
+	height: 100%;
+	width: 7%;
+	left: 1%;
+}
+#logo{
+	position: relative;
+	top: 6px;
+	left: 5px;
+	height: 3.6em;
+	width: 3.6em;
+}
+#busca{
+	position: absolute;
+	background-color: #FFFFFF;
+	width: 40%;
+	height: 40%;
+	left: 30%;
+	top: 15%;
+	border-radius: 15px;
+}
+#busca2{
+	position: absolute;
+	top: 8%;
+	left: 2%;
+	width: 87%;
+	height: 80%;
+	border: none;
+	
+}
+#lupa{
+	position: absolute;
+	top: 5%;
+	right: 1%;
+	height: 2.2em;
+	width: 2.2em;
+}
+#sloganc{
+	/*background-color: #f00;*/
+	position: absolute;
+	left: 20%;
+	top: 60%;
+	width: 60%;
+	height: 35%;
+}
+#slogan{
+	text-align: center;
+	position: relative;
+	color: #FFFFFF;
+	bottom: 20%;
+}
+#paginalogin{
+	position: absolute;
+	height: 100%;
+	width: 30%;
+	left: 8%;
+}
+#blink{
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 2.5em;
+	left: 1%;
+	top: -34%;
+}
+#wellcome{
+	position: absolute;
+	color: #FFFFFF;
+	left: 11%;
+	top: 10%;
+
+}
+#plc{
+	color: #FFFFFF;
+	position: absolute;
+	top: 30%;
+	left:11%;
+
+}
+#plc > a:visited{
+	color: #ffffff;
+	text-decoration: none;
+}
+#plc >a:link{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#plc > a:hover{
+	color:#d55534;
+	text-decoration: underline;
+}
+
+#carrinho > a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#carrinho > a >img{
+	position: absolute;
+	height: 3em;
+	width: 3em;
+	right: 10%;
+	top: 20%;
+}
+
+#mycar{
+	position: absolute;
+	right: 9.4%;
+	top: 67%;
+	font-size: 0.7em;
+}
+#numerocar{
+	position: absolute;
+	right: 4.7%;
+	bottom: 1%;
+	font-size: 2em;
+}
+#itemcar{
+	position: absolute;
+	right: 5%;
+	top: 40%;
+	font-size: 0.9em;
+}

@@ -1,0 +1,15 @@
+#banner{
+	position: absolute;
+	left: 7%;
+	height: 50%;
+	width: 100%;
+	bottom: 30%;
+}
+#bannerm{
+	position: absolute;
+	
+
+}
+#bannerm > a > img{
+border-radius: 15px;
+}
