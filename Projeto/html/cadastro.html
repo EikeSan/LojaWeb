@@ -2,12 +2,11 @@
 <html>
 	<head>
 		<title>WebPlace</title>
-		<link rel="icon" type="image/png" href="img/loja.png">
+		<link rel="icon" type="image/png" href="../img/loja.png">
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/head.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/foot.css">
-
+		<link rel="stylesheet" type="text/css" href="../css/head.css">
+		<link rel="stylesheet" type="text/css" href="../css/foot.css">
+		<link rel="stylesheet" type="text/css" href="../css/cadastroCliente.css">
 	</head>
 	<body>
 		<div id="body">
@@ -18,19 +17,19 @@
 						<ul>
 							<li>
 								<!-- Link para voltar a pagina inicial -->
-								<a href="index.html">Início</a>
+								<a href="../index.html">Início</a>
 							</li>
 							<li>
 								<!-- Link para pagina com produtos disponiveis -->
-								<a href="html/const.html">Produtos</a>
+								<a href="const.html">Produtos</a>
 							</li>
 							<li>
 								<!-- Link para realizar atendimento com um vendedor ou suporte-->
-								<a href="html/const.html">Atendimento</a>
+								<a href="const.html">Atendimento</a>
 							</li>
 							<li>
 								<!-- Link para usuario alterar informcoes da sua conta -->
-								<a href="html/const.html">Minha Conta</a>
+								<a href="const.html">Minha Conta</a>
 							</li>
 							<li>
 								<!-- Link para uma pagina informativa sobre a empresa-->
@@ -41,8 +40,8 @@
 				</div>
 				<div id="headercenter">
 					<div id="headerlogo">
-						<a href="index.html">
-							<img id="logo"src="img/loja.png"/>
+						<a href="../index.html">
+							<img id="logo"src="../img/loja.png"/>
 							<h6>WebPlace</h6>
 						</a>
 					</div>
@@ -51,16 +50,16 @@
 						<p id="wellcome">Bem-Vindo, realize o seu:</p>
 						<p id="plc">
 							<!-- Link para pagina de login-->
-							<a id="entre"href="html/const.html">login</a> 
+							<a id="entre"href="const.html">login</a> 
 							ou 
 							<!--Link para pagina de cadastro-->
-							<a id="cadastro"href="html/cadastro.html">Cadastro</a>.
+							<a id="cadastro"href="cadastro.html">Cadastro</a>.
 						</p>
 					</div>
 					<div id="busca">
 						<form action="">
 							<input id="busca2" name="busca"type="search" placeholder="Buscar">
-							<input id="lupa"type="image" src="img/lupa.png">	
+							<input id="lupa"type="image" src="../img/lupa.png">	
 						</form>
 					</div>
 					<div id="sloganc">
@@ -69,8 +68,8 @@
 					<!-- Implementação de um carrionho de compras se for necessário -->
 					<div id="carrinho">
 						<!-- A ancora deve redirecionar para a pagina do carrinho (carrinho.html)-->
-						<a href="html/const.html">
-							<img src="img/carrinho.png">
+						<a href="const.html">
+							<img src="../img/carrinho.png">
 							<!-- ao adicionar um item no carrinho a imagem dele deve ser alterada pela imagem abaixo:
 							<img src="img/carrinhoi2.png">-->
 							<p id="mycar">Meu Carrinho</p>
@@ -80,13 +79,30 @@
 					</div>
 				</div>
 			</div>
-			<!-- Utilizar JavaScript para ficar com um efeito de SlideShow-->
-			<div id="banner">
-				<div id="bannerm">
-					<a id="promo" href="html/const.html"><img class="item"src="img/banner.png"></a>
-				</div>
-			</div>
-		<div>
+		<div id="cadastro">
+			<form id="cadastroMeusDados" action="">
+				<h1>Meu Cadastro</h1>
+				<fieldset>
+					<legend>Meus Dados:</legend>
+					<h5>Para ser cliente, é necessário preencher corretamente o formulário abaixo com os respectivos dados cadastrais. Os campos que possuem o "<span>*</span>" são de preenchimento obrigatório. <h5>
+					<p>
+						<span>*</span>Nome Comleto: <input type="text" name="nomeCompleto"><br>
+						<span>*</span>CPF: <input type="number" name="cpf"><br>
+						<span>*</span>Data de Nascimento: <input type="date" name="dataNascimento"><br>
+						<span>*</span>Sexo: <select name="sexo">
+								<option value="NULL" selected="selected">Selecione</option>
+								<option value="m">Masculino</option>
+								<option value="f">Feminino</option>
+							  </select><br>
+						<span>*</span>Telefone 1: <input type="tel" name="telefone1"><br>
+						Telefone 2 <i>(opicional)</i>: <input type="tel" name="telefone2"><br>
+						<span>*</span>E-mail: <input type "email" name="email"><br>
+						<span>*</span>Senha: <input type="password" name="senha"><br>
+						<span>*</span>Confirmação de Senha: <input type="password" name="confirmacaoSenha">
+					</p>
+				</fieldset>
+			</form>
+		</div>
 	</body>
 	<footer>
 		<!-- Rodapé da página com formas de pagamento -->
@@ -95,10 +111,10 @@
 				<p>Formas de pagamento</p>
 			</div>
 			<div id="paymod">
-				<img id="master"src="img/master.png">
-				<img id="visa"src="img/visa.png">
-				<img id="gold"src="img/gold.png">
-				<img id="payboleto"src="img/boleto.png">
+				<img id="master"src="../img/master.png">
+				<img id="visa"src="../img/visa.png">
+				<img id="gold"src="../img/gold.png">
+				<img id="payboleto"src="../img/boleto.png">
 			</div>
 			<div id="paytype">
 				<p id="cards">Catões</p>
@@ -107,8 +123,4 @@
 			</div>
 		</div>
 	</footer>
-
-	<!-- Implementação do SlideShow, carrinho
-	<script type="text/javascript" src="js/banner.js"></script>-->
-
 </html>
