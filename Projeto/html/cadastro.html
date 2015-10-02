@@ -84,22 +84,27 @@
 				<h1>Meu Cadastro</h1>
 				<fieldset>
 					<legend>Meus Dados:</legend>
-					<h5>Para ser cliente, é necessário preencher corretamente o formulário abaixo com os respectivos dados cadastrais. Os campos que possuem o "<span>*</span>" são de preenchimento obrigatório. <h5>
-					<p>
-						<span>*</span>Nome Comleto: <input type="text" name="nomeCompleto"><br>
-						<span>*</span>CPF: <input type="number" name="cpf"><br>
-						<span>*</span>Data de Nascimento: <input type="date" name="dataNascimento"><br>
-						<span>*</span>Sexo: <select name="sexo">
-								<option value="NULL" selected="selected">Selecione</option>
-								<option value="m">Masculino</option>
-								<option value="f">Feminino</option>
-							  </select><br>
-						<span>*</span>Telefone 1: <input type="tel" name="telefone1"><br>
-						Telefone 2 <i>(opicional)</i>: <input type="tel" name="telefone2"><br>
-						<span>*</span>E-mail: <input type "email" name="email"><br>
-						<span>*</span>Senha: <input type="password" name="senha"><br>
-						<span>*</span>Confirmação de Senha: <input type="password" name="confirmacaoSenha">
-					</p>
+					<h5>Para ser cliente, é necessário preencher corretamente o formulário abaixo com os respectivos dados cadastrais. Os campos que possuem o "<span>*</span>" são de preenchimento obrigatório. </h5>
+					<div id="cadastroMeusDadosNomes">
+						<p>:Nome Comleto <span>*</span></p><input type="text" name="nomeCompleto"><br>
+						<p>:CPF <span>*</span></p><input type="number" name="cpf"><br>
+						<p>:Data de Nascimento <span>*</span></p><input type="date" name="dataNascimento"><br>
+						<p>:Sexo <span>*</span></p>
+						<select name="sexo">
+							<option value="NULL" selected="selected">Selecione</option>
+							<option value="m">Masculino</option>
+							<option value="f">Feminino</option>
+						</select><br>
+						<p>:Telefone 1 <span>*</span></p> <input type="tel" name="telefone1"><br>
+						<p>:Telefone 2 </p><input type="tel2" name="telefone2"><br>
+						<p>:E-mail <span>*</span></p><input type "email" name="email"><br>
+						<p>:Senha <span>*</span></p><input type="password" name="senha"><br>
+						<p>:Confirmação de Senha<span>*</span></p><input type="password" name="confirmacaoSenha">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Endereço: </legend>
+
 				</fieldset>
 			</form>
 		</div>

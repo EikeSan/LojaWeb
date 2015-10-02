@@ -6,3 +6,26 @@
 span{
 	color: red;
 }
+
+#cadastroMeusDadosNomes{
+	width: 500px;
+	margin: 5%;
+
+}
+#cadastroMeusDadosNomes p {
+	display: inline-block;
+	direction: rtl;
+	margin: 9px 0;
+	width: 190px;
+}
+#cadastroMeusDadosNomes input{
+	float: right;
+	width: 300px;
+	height: 20px;
+}
+
+#cadastroMeusDadosNomes select {
+	float: right;
+	width: 305px;
+	height: 25px;
+}
