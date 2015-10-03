@@ -5,8 +5,8 @@
 		<link rel="icon" type="image/png" href="../img/loja.png">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/head.css">
-		<link rel="stylesheet" type="text/css" href="../css/cadastroCliente.css">
 		<link rel="stylesheet" type="text/css" href="../css/foot.css">
+		<link rel="stylesheet" type="text/css" href="../css/login.css">
 	</head>
 	<body>
 		<div id="body">
@@ -79,34 +79,35 @@
 					</div>
 				</div>
 			</div>
-		<div id="cadastro">
-			<form id="cadastroMeusDados" action="">
-				<h1>Cadastro</h1>
+		<div id="login">
+			<form id="loginID" action="">
+				<h1>Identificação</h1>
 				<fieldset>
-					<legend>Dados Funcionário:</legend>
-					<h5>Para cadastrar um novo funcinário, é necessário preencher corretamente o formulário abaixo com os respectivos dados cadastrais. Os campos que possuem o "<span>*</span>" são de preenchimento obrigatório. </h5>
-					<div id="cadastroMeusDadosNomes">
-						<p>:Nome Comleto <span>*</span></p><input type="text" name="nomeCompleto"><br>
-						<p>:CPF <span>*</span></p><input type="number" name="cpf"><br>
-						<p>:Mátricula <span>*</span></p><input type="number" name="cpf"><br>
-						<p>:Data de Nascimento <span>*</span></p><input type="date" name="dataNascimento"><br>
-						<p>:Sexo <span>*</span></p>
-						<select name="sexo">
-							<option value="NULL" selected="selected">Selecione</option>
-							<option value="m">Masculino</option>
-							<option value="f">Feminino</option>
-						</select><br>
-						<p>:Telefone 1 <span>*</span></p> <input type="tel" name="telefone1"><br>
-						<p>:Telefone 2 </p><input type="tel2" name="telefone2"><br>
-						<p>:E-mail <span>*</span></p><input type "email" name="email"><br>
-						<p>:Senha <span>*</span></p><input type="password" name="senha"><br>
-						<p>:Confirmação de Senha<span>*</span></p><input type="password" name="confirmacaoSenha">
+					<h3>Já possuo um cadastro</h3>
+					<div id="loginDados">
+						<p>:E-mail </p><input type "email" name="email"><br>
+						<p>:Senha </p><input type="password" name="senha"><br>
+					</div>
+					<div id="botoes">
+						<input id="enviar"type="submit" value="Login">
 					</div>
 				</fieldset>
-				<div id="botoes">
-					<input id="enviar"type="submit" value="Enviar">
-					<input id="cancelar"type="reset" value="Cancelar">
-				</div>
+
+			</form>
+		</div>
+		<div id="irCadastro">
+			<form id="irCadastro2" action="">
+				<fieldset>
+					<h3>Ainda não sou cadastrado</h3>
+					<ul>
+						<p>Crie seu cadastro e:</p>
+						<li>Receba notificaçao sobre promoções</li>
+						<li>Facilite suas compras</li>
+					</ul>
+					<div id="botaoIrCadastro">
+						<input id="irCadastrar"type="button" onclick="location.href ='cadastro.html'" value="Cadastro">
+					</div>
+				</fieldset>
 			</form>
 		</div>
 	</body>
@@ -132,7 +133,10 @@
 	<style type="text/css">
 	<!--
 		#footer{
-			bottom: -10%;
+			bottom: 3%;
+		}
+		#body{
+			height: 99%;
 		}
 	-->
 	</style>
