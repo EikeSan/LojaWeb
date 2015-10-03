@@ -5,8 +5,8 @@
 		<link rel="icon" type="image/png" href="../img/loja.png">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/head.css">
-		<link rel="stylesheet" type="text/css" href="../css/foot.css">
 		<link rel="stylesheet" type="text/css" href="../css/cadastroCliente.css">
+		<link rel="stylesheet" type="text/css" href="../css/foot.css">
 	</head>
 	<body>
 		<div id="body">
@@ -81,13 +81,14 @@
 			</div>
 		<div id="cadastro">
 			<form id="cadastroMeusDados" action="">
-				<h1>Meu Cadastro</h1>
+				<h1>Cadastro</h1>
 				<fieldset>
-					<legend>Meus Dados:</legend>
-					<h5>Para ser cliente, é necessário preencher corretamente o formulário abaixo com os respectivos dados cadastrais. Os campos que possuem o "<span>*</span>" são de preenchimento obrigatório. </h5>
+					<legend>Dados Funcionário:</legend>
+					<h5>Para cadastrar um novo funcinário, é necessário preencher corretamente o formulário abaixo com os respectivos dados cadastrais. Os campos que possuem o "<span>*</span>" são de preenchimento obrigatório. </h5>
 					<div id="cadastroMeusDadosNomes">
 						<p>:Nome Comleto <span>*</span></p><input type="text" name="nomeCompleto"><br>
 						<p>:CPF <span>*</span></p><input type="number" name="cpf"><br>
+						<p>:Mátricula <span>*</span></p><input type="number" name="cpf"><br>
 						<p>:Data de Nascimento <span>*</span></p><input type="date" name="dataNascimento"><br>
 						<p>:Sexo <span>*</span></p>
 						<select name="sexo">
@@ -100,27 +101,6 @@
 						<p>:E-mail <span>*</span></p><input type "email" name="email"><br>
 						<p>:Senha <span>*</span></p><input type="password" name="senha"><br>
 						<p>:Confirmação de Senha<span>*</span></p><input type="password" name="confirmacaoSenha">
-					</div>
-				</fieldset>
-				<fieldset>
-					<legend>Meu Endereço: </legend>
-					<h5>Os campos que possuem <span>*</span> são de preenchimento obrigatório, pois são impressos na Nota Fiscal do pedido.</h5>
-					<div id="cadastroMeuEndereco">
-						<p>:CEP<span>*</span></p><input type="number" name ="cep">
-						<p>:Identificação do endereço<span>*</span></p>
-						<select name="tipoEndereco">
-							<option value="NULL">Selecione</option>
-							<option value="casa">Casa</option>
-							<option value="apartamento">Apartamento</option>
-							<option value="comercial">Comercial</option>
-							<option value="outro">Outro</option>
-						</select>
-						<p>:Endereço<span>*</span></p><input type="text" name ="end">
-						<p>:Número<span>*</span></p><input type="number" name="endnum">
-						<p>:Bairro<span>*</span></p><input type="text" name="bairro">
-						<p>:Cidade<span>*</span></p><input type="text" name="cidade">
-						<p>:Estado<span>*</span></p><input type="text" name="estado">
-						<p>:Complemento</p><input type="text" name="complemento">
 					</div>
 				</fieldset>
 				<div id="botoes">
@@ -149,4 +129,11 @@
 			</div>
 		</div>
 	</footer>
+	<style type="text/css">
+	<!--
+		#footer{
+			bottom: -10%;
+		}
+	-->
+	</style>
 </html>

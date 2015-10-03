@@ -29,3 +29,50 @@ span{
 	width: 305px;
 	height: 25px;
 }
+
+
+
+#cadastroMeuEndereco{
+	width: 500px;
+	margin: 5%;
+
+}
+#cadastroMeuEndereco p {
+	display: inline-block;
+	direction: rtl;
+	margin: 9px 0;
+	width: 190px;
+}
+#cadastroMeuEndereco input{
+	float: right;
+	width: 300px;
+	height: 20px;
+}
+
+#cadastroMeuEndereco select {
+	float: right;
+	width: 305px;
+	height: 25px;
+}
+#footer{
+	bottom: -50%;
+}
+#botoes{
+	margin: 3% 35%;
+	width: 25%;
+}
+#enviar{
+	border-radius: 15px;
+	margin: 1% 5%; 
+	float:left;
+	width: 90px;
+	height: 30px;
+}
+#cancelar{
+	border-radius: 15px;
+    width: 90px;
+	height: 30px;
+	margin: 1% 5%;
+	float: right;
+	
+}
