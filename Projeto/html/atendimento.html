@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
+		<head>
 		<title>WebPlace</title>
 		<link rel="icon" type="image/png" href="../img/loja.png">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/head.css">
 		<link rel="stylesheet" type="text/css" href="../css/foot.css">
-		<link rel="stylesheet" type="text/css" href="../css/login.css">
+		<link rel="stylesheet" type="text/css" href="../css/atendimento.css">
 	</head>
 	<body>
 		<div id="body">
@@ -79,37 +79,28 @@
 					</div>
 				</div>
 			</div>
-		<div id="login">
-			<form id="loginID" action="">
-				<h1>Identificação</h1>
-				<fieldset>
-					<h3>Já possuo um cadastro</h3>
-					<div id="loginDados">
-						<p>:E-mail </p><input type "email" name="email"><br>
-						<p>:Senha </p><input type="password" name="senha"><br>
+			<div id="menu">
+				<div id="atendimento">
+					<h1>Atendimento</h1>
+					<div id="atendimentoCaixa">
+						<div id="atendimentoCaixaLink">
+							<img id="imgDuvida" src="../img/duvida.png"/8i90>
+							<a href="duvf.html">
+								<p id="irDuvidas">Dúvidas frequentes</p>
+							</a>
+							<img id="imgEmail" src="../img/email.png"/>
+							<a href="aemail.html">
+								<p id="irEmail">Atendimento por e-mail</p>
+							</a>
+							<img id="imgPedido" src="../img/transporte.png">
+							<a href="const.html">
+								<p id="irPedido">Acompanhar Pedido</p>
+							</a>
+						</div>
+							<!--<h2><a href="">Seu problema ainda não foi resolvido? Clique aqui.</a></h2>-->
 					</div>
-					<div id="botoes">
-						<input id="enviar"type="submit" value="Login">
-					</div>
-				</fieldset>
-
-			</form>
-		</div>
-		<div id="irCadastro">
-			<form id="irCadastro2" action="">
-				<fieldset>
-					<h3>Ainda não sou cadastrado</h3>
-					<ul>
-						<p>Crie seu cadastro e:</p>
-						<li>Receba notificaçao sobre promoções</li>
-						<li>Facilite suas compras</li>
-					</ul>
-					<div id="botaoIrCadastro">
-						<input id="irCadastrar"type="button" onclick="location.href ='cadastro.html'" value="Cadastro">
-					</div>
-				</fieldset>
-			</form>
-		</div>
+				</div>
+			</div>
 	</body>
 	<footer>
 		<!-- Rodapé da página com formas de pagamento -->
@@ -130,14 +121,4 @@
 			</div>
 		</div>
 	</footer>
-	<style type="text/css">
-	<!--
-		#footer{
-			bottom: 3%;
-		}
-		#body{
-			height: 99%;
-		}
-	-->
-	</style>
 </html>

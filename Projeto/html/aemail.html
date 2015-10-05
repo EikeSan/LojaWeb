@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-	<head>
+		<head>
 		<title>WebPlace</title>
 		<link rel="icon" type="image/png" href="../img/loja.png">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/head.css">
-		<link rel="stylesheet" type="text/css" href="../css/cadastroCliente.css">
 		<link rel="stylesheet" type="text/css" href="../css/foot.css">
+		<link rel="stylesheet" type="text/css" href="../css/email.css">
 	</head>
+		
 	<body>
 		<div id="body">
 			<div id="header">
@@ -25,7 +26,7 @@
 							</li>
 							<li>
 								<!-- Link para realizar atendimento com um vendedor ou suporte-->
-								<a href="const.html">Atendimento</a>
+								<a href="atendimento.html">Atendimento</a>
 							</li>
 							<li>
 								<!-- Link para usuario alterar informcoes da sua conta -->
@@ -33,7 +34,7 @@
 							</li>
 							<li>
 								<!-- Link para uma pagina informativa sobre a empresa-->
-								<a href="html/const.html">Sobre Nós</a>
+								<a href="sobrenos.html">Sobre Nós</a>
 							</li>
 						</ul>
 					</div>
@@ -79,36 +80,24 @@
 					</div>
 				</div>
 			</div>
-		<div id="cadastro">
-			<form id="cadastroMeusDados" action="">
-				<h1>Cadastro</h1>
-				<fieldset>
-					<legend>Dados Funcionário:</legend>
-					<h5>Para cadastrar um novo funcinário, é necessário preencher corretamente o formulário abaixo com os respectivos dados cadastrais. Os campos que possuem o "<span>*</span>" são de preenchimento obrigatório. </h5>
-					<div id="cadastroMeusDadosNomes">
-						<p>:Nome Comleto <span>*</span></p><input type="text" name="nomeCompleto"><br>
-						<p>:CPF <span>*</span></p><input type="number" name="cpf"><br>
-						<p>:Mátricula <span>*</span></p><input type="number" name="cpf"><br>
-						<p>:Data de Nascimento <span>*</span></p><input type="date" name="dataNascimento"><br>
-						<p>:Sexo <span>*</span></p>
-						<select name="sexo">
-							<option value="NULL" selected="selected">Selecione</option>
-							<option value="m">Masculino</option>
-							<option value="f">Feminino</option>
-						</select><br>
-						<p>:Telefone 1 <span>*</span></p> <input type="tel" name="telefone1"><br>
-						<p>:Telefone 2 </p><input type="tel2" name="telefone2"><br>
-						<p>:E-mail <span>*</span></p><input type "email" name="email"><br>
-						<p>:Senha <span>*</span></p><input type="password" name="senha"><br>
-						<p>:Confirmação de Senha<span>*</span></p><input type="password" name="confirmacaoSenha">
-					</div>
-				</fieldset>
-				<div id="botoes">
-					<input id="enviar"type="submit" value="Enviar">
-					<input id="cancelar"type="reset" value="Cancelar">
+				<div id="mailbox">
+					<form id="mailboxEmail" action="">
+						<fieldset>
+							<div id="mailDados">
+								<p id="mailDadosNome">:Nome</p> <input name="realname" size="25"> 
+								<p id="mailDadosEmail">:Email </p><input type="email" name="email" size="30"> <br>
+								<p id="mailDadosAssunto">:Assunto </p><input name="subject" size="30" ><br>
+								<p id="mailDadosMensagem">:Mensagem </p><br>
+								<textarea name=message rows="10" cols="50"> </textarea>
+							</div>
+							<div id="mailBotoes">
+								<input id="submit" type="submit" value="Envie sua mensagem" name="submit" >
+								<input id="reset" type="reset" value="Limpar" name="reset">
+							</div>
+						</fieldset>
+					</form>
 				</div>
-			</form>
-		</div>
+		<div>	
 	</body>
 	<footer>
 		<!-- Rodapé da página com formas de pagamento -->
@@ -129,11 +118,16 @@
 			</div>
 		</div>
 	</footer>
+
 	<style type="text/css">
-	<!--
-		#footer{
-			bottom: -10%;
+		<!--
+		#body{
+			height: 98%;
 		}
-	-->
+		#footer{
+			bottom: 1%;
+		}
+		-->
 	</style>
+		
 </html>

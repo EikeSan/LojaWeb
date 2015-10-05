@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
+		<head>
 		<title>WebPlace</title>
 		<link rel="icon" type="image/png" href="../img/loja.png">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/head.css">
 		<link rel="stylesheet" type="text/css" href="../css/foot.css">
-		<link rel="stylesheet" type="text/css" href="../css/login.css">
+		<link rel="stylesheet" type="text/css" href="../css/sobrenos.css">
 	</head>
 	<body>
 		<div id="body">
@@ -79,37 +79,12 @@
 					</div>
 				</div>
 			</div>
-		<div id="login">
-			<form id="loginID" action="">
-				<h1>Identificação</h1>
-				<fieldset>
-					<h3>Já possuo um cadastro</h3>
-					<div id="loginDados">
-						<p>:E-mail </p><input type "email" name="email"><br>
-						<p>:Senha </p><input type="password" name="senha"><br>
-					</div>
-					<div id="botoes">
-						<input id="enviar"type="submit" value="Login">
-					</div>
-				</fieldset>
-
-			</form>
-		</div>
-		<div id="irCadastro">
-			<form id="irCadastro2" action="">
-				<fieldset>
-					<h3>Ainda não sou cadastrado</h3>
-					<ul>
-						<p>Crie seu cadastro e:</p>
-						<li>Receba notificaçao sobre promoções</li>
-						<li>Facilite suas compras</li>
-					</ul>
-					<div id="botaoIrCadastro">
-						<input id="irCadastrar"type="button" onclick="location.href ='cadastro.html'" value="Cadastro">
-					</div>
-				</fieldset>
-			</form>
-		</div>
+			<div id="sobreNos">
+				<h1>Sobre Nós</h1>
+				<div id="sobreNosCaixa">
+					<h2 id="blabla">Empresa com tradição e com o compromisso de oferecer aos nossos consumidores as melhores peças e os melhores preços e um sistema que facilita a procura e a montagem de computadores sem a parte ruim da compra de peças avulças, barateando o custo do produto final sem perder a qualidade.</h2>
+				</div>
+			</div>
 	</body>
 	<footer>
 		<!-- Rodapé da página com formas de pagamento -->
@@ -130,14 +105,23 @@
 			</div>
 		</div>
 	</footer>
+
 	<style type="text/css">
-	<!--
-		#footer{
-			bottom: 3%;
-		}
-		#body{
-			height: 99%;
-		}
-	-->
-	</style>
+			#const{
+				position: absolute;
+				top: 30%;
+				left: 40%;
+			}
+			body{
+				/*background-color: #FFFF33;*/
+				/*background-color: #d55534;*/
+			}
+			#body{
+				height: 98%;
+			}
+			#footer{
+				bottom: 1%;
+			}
+		</style>
+		
 </html>

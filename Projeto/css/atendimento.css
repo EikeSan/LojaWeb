@@ -1,0 +1,56 @@
+#menu{
+	margin-top: 22%;
+	width: 100%;
+}
+#menu h1{
+	color: #787878;
+}
+#atendimentoCaixa{
+	border: solid 1px;
+}
+
+#atendimentoCaixaLink p{
+	display: inline-block;
+	float: right;
+}
+#atendimentoCaixaLink{
+	width: 250px;
+	height: 400px;
+	margin: 2% 2%;
+}
+#atendimentoCaixaLink  a:visited{
+	color: #000000;
+	text-decoration: none;
+}
+#atendimentoCaixaLink a:link{
+	text-decoration: none;
+	color: #000000;
+}
+#atendimentoCaixaLink > a:hover{
+	color:#d55534;
+	text-decoration: underline;
+}
+#imgDuvida{
+	height: 12%;
+	margin: 4% 3%;
+}
+#irDuvidas{
+	margin-top: -20%;
+	margin-right: 20%;
+}
+#imgEmail{
+	height: 14.5%;
+	margin: 4% 1%;
+}
+#irEmail{
+	margin-top: -20%;
+	margin-right: 8%;
+}
+#imgPedido{
+	height: 15%;
+	margin-right: 4% 1%;
+}
+#irPedido{
+	margin-top: -18%;
+	margin-right: 17%;
+}
