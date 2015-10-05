@@ -6,7 +6,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/head.css">
 		<link rel="stylesheet" type="text/css" href="../css/foot.css">
-		<link rel="stylesheet" type="text/css" href="../css/duvida.css">
+		<link rel="stylesheet" type="text/css" href="../css/meuCarrinho.css">
 	</head>
 	<body>
 		<div id="body">
@@ -79,42 +79,48 @@
 					</div>
 				</div>
 			</div>
-			<div id="duvidas">
-				<h1>Dúvidas Frequentes</h1>
-				<div id="duvidasCaixa">
-					<div id="duvidasCaixaLista">
-						<ul>
-							<li>
-								<a href="const.html">
-									<p>Atraso na entrega do pedido</p>
-								</a>						
-							</li>
-							<li>
-								<a href="const.html">
-									<p>Cancelar pedido</p>
-								</a>
-							</li>
-							<li>
-								<a href="const.html">
-									<p>Garantia</p>
-								</a>
-							</li>
-							<li>
-								<a href="const.html">
-									<p>Promoções</p>
-								</a>
-							</li>
-							<li>
-								<a href="const.html">
-									<p>Montagem Ideal</p>
-								</a>
-							</li>
-							<li>
-								<a href="const.html">
-									<p>Outros</p>
-								</a>
-							</li>
-						</ul>
+			<div id="meuCarrinho">
+				<h1>Meu Carrinho</h1>
+				<div id="meuCarrinhoCaixa">
+					<div id="meuCarrinhoCaixaProdutos">
+						<table>
+							<thead>
+								<tr>
+									<td class="tableProdutos" colspan="2">Produto(s)</td>
+									<td class="tableQtd">Quantidade</td>
+									<td class="tableEn">Entrega</td>
+									<td class="tableVu">Valor Unitário</td>
+									<td class="tableVt">Valor Total</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+										<td class="tableImg">
+											<img src="../img/produtos/gabinete2.png">
+										</td>
+										<td class="tableProdutos">Hawk</td>
+										<td class="tableQtd">1</td>
+										<td class="tableEn">Aberto</td>
+										<td class="tableVu">4.570,00</td>
+										<td class="tableVt">4.570,00</td>
+									</tr>
+									<tr>
+										<td class="tableImg">
+											<img src="../img/produtos/hyperx.png">
+										</td>
+										<td class="tableProdutos">Memoria RAM: 8GB DDR 1600MHz HyperX</td>
+										<td class="tableQtd">2</td>
+										<td class="tableEn">Aberto</td>
+										<td class="tableVu">360,00</td>
+										<td class="tableVt">720,00</td>
+									</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td class="tableVf" colspan="7">Total Final:<span id="valorFinal">5.250,00</span></td>
+								</tr>
+							</tfoot>
+						</table>
 					</div>
 				</div>
 			</div>
@@ -138,14 +144,4 @@
 			</div>
 		</div>
 	</footer>
-
-	<style type="text/css">
-			#body{
-				height: 98%;
-			}
-			#footer{
-				bottom: 1%;
-			}
-		</style>
-		
 </html>

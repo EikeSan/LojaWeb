@@ -26,7 +26,7 @@
 	text-decoration: none;
 	color: #000000;
 }
-#atendimentoCaixaLink > a:hover{
+#atendimentoCaixaLink a:hover{
 	color:#d55534;
 	text-decoration: underline;
 }
