@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
+		<head>
 		<title>WebPlace</title>
 		<link rel="icon" type="image/png" href="../img/loja.png">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/head.css">
 		<link rel="stylesheet" type="text/css" href="../css/foot.css">
-		<link rel="stylesheet" type="text/css" href="../css/cadastroCliente.css">
+		<link rel="stylesheet" type="text/css" href="../css/minhaConta.css">
 	</head>
 	<body>
 		<div id="body">
@@ -79,56 +79,67 @@
 					</div>
 				</div>
 			</div>
-		<div id="cadastro">
-			<form id="cadastroMeusDados" action="">
-				<h1>Meu Cadastro</h1>
-				<fieldset>
-					<legend>Meus Dados:</legend>
-					<h5>Para ser cliente, é necessário preencher corretamente o formulário abaixo com os respectivos dados cadastrais. Os campos que possuem o "<span>*</span>" são de preenchimento obrigatório. </h5>
-					<div id="cadastroMeusDadosNomes">
-						<p>:Nome Comleto <span>*</span></p><input type="text" name="nomeCompleto"><br>
-						<p>:CPF <span>*</span></p><input type="number" name="cpf"><br>
-						<p>:Data de Nascimento <span>*</span></p><input type="date" name="dataNascimento"><br>
-						<p>:Sexo <span>*</span></p>
-						<select name="sexo">
-							<option value="NULL" selected="selected">Selecione</option>
-							<option value="m">Masculino</option>
-							<option value="f">Feminino</option>
-						</select><br>
-						<p>:Telefone 1 <span>*</span></p> <input type="tel" name="telefone1"><br>
-						<p>:Telefone 2 </p><input type="tel2" name="telefone2"><br>
-						<p>:E-mail <span>*</span></p><input type "email" name="email"><br>
-						<p>:Senha <span>*</span></p><input type="password" name="senha"><br>
-						<p>:Confirmação de Senha<span>*</span></p><input type="password" name="confirmacaoSenha">
-					</div>
-				</fieldset>
-				<fieldset>
-					<legend>Meu Endereço: </legend>
-					<h5>Os campos que possuem <span>*</span> são de preenchimento obrigatório, pois são impressos na Nota Fiscal do pedido.</h5>
-					<div id="cadastroMeuEndereco">
-						<p>:CEP<span>*</span></p><input type="number" name ="cep">
-						<p>:Identificação do endereço<span>*</span></p>
-						<select name="tipoEndereco">
-							<option value="NULL">Selecione</option>
-							<option value="casa">Casa</option>
-							<option value="apartamento">Apartamento</option>
-							<option value="comercial">Comercial</option>
-							<option value="outro">Outro</option>
-						</select>
-						<p>:Endereço<span>*</span></p><input type="text" name ="end">
-						<p>:Número<span>*</span></p><input type="number" name="endnum">
-						<p>:Bairro<span>*</span></p><input type="text" name="bairro">
-						<p>:Cidade<span>*</span></p><input type="text" name="cidade">
-						<p>:Estado<span>*</span></p><input type="text" name="estado">
-						<p>:Complemento</p><input type="text" name="complemento">
-					</div>
-				</fieldset>
-				<div id="botoes">
-					<input id="enviar"type="submit" value="Enviar">
-					<input id="cancelar"type="reset" value="Cancelar">
-				</div>
-			</form>
-		</div>
+			<div id="minhaConta">
+					<h1>Minha Conta</h1>
+					<div id="minhaContaCaixa">
+
+						<div id="minhaContaCaixaInfo">
+							<img id="minhaContaCaixaInfoImg" src="../img/user.png">
+							<div id="minhaContaCaixaInfoTxt">
+								<h2 >Noob Saibot</h2>
+								<a id="sair" href="">
+									<p>Sair</p>
+								</a>
+							</div>
+						</div>
+
+						<!-- Editar Dados -->
+
+						<div id="minhaContaCaixaEditar">
+							<h2>Editar Dados</h2>
+							<nav>
+								<ul>
+									<li>
+										<p>
+											<img src="../img/editar.png">
+											<a href="">Editar Endereço</a>
+										</p>
+									</li>
+									<li>
+										<p>
+											<img src="../img/editar.png">
+											<a href="">Editar Dados Pessoais</a>
+										</p>
+									</li>
+								</ul>
+							</nav>
+						</div>			
+
+						<!-- Meus Pedidos -->
+
+						<div id="minhaContaCaixaPedidos" >
+							<h2>Meus Pedidos</h2>
+							<nav>
+								<ul>
+									<li>
+										<a href="">
+											<p>Pedidos em andamento</p>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<p>Pedidos cancelados</p>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<p>Pedidos finalizados</p>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						
 	</body>
 	<footer>
 		<!-- Rodapé da página com formas de pagamento -->
@@ -149,5 +160,5 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer>	
 </html>

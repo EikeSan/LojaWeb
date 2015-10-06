@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WebPlace</title>
+		<link rel="icon" type="image/png" href="../img/loja.png">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/head.css">
+		<link rel="stylesheet" type="text/css" href="../css/foot.css">
+		<link rel="stylesheet" type="text/css" href="../css/montagem.css">
+	</head>
+	<body>
+		<div id="body">
+			<div id="header">
+				<div id="headertop">
+					<!-- Barra de navegacao-->
+					<div id="navbar">
+						<ul>
+							<li>
+								<!-- Link para voltar a pagina inicial -->
+								<a href="../index.html">Início</a>
+							</li>
+							<li>
+								<!-- Link para pagina com produtos disponiveis -->
+								<a href="produtos.html">Produtos</a>
+							</li>
+							<li>
+								<!-- Link para realizar atendimento com um vendedor ou suporte-->
+								<a href="atendimento.html">Atendimento</a>
+							</li>
+							<li>
+								<!-- Link para usuario alterar informcoes da sua conta -->
+								<a href="minhaConta.html">Minha Conta</a>
+							</li>
+							<li>
+								<!-- Link para uma pagina informativa sobre a empresa-->
+								<a href="sobrenos.html">Sobre Nós</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="headercenter">
+					<div id="headerlogo">
+						<a href="../index.html">
+							<img id="logo"src="../img/loja.png"/>
+							<h6>WebPlace</h6>
+						</a>
+					</div>
+					<div id="paginalogin">
+						<p id="blink">;)</p>
+						<p id="wellcome">Bem-Vindo, realize o seu:</p>
+						<p id="plc">
+							<!-- Link para pagina de login-->
+							<a id="entre"href="login.html">login</a> 
+							ou 
+							<!--Link para pagina de cadastro-->
+							<a id="cadastro"href="cadastro.html">Cadastro</a>.
+						</p>
+					</div>
+					<div id="busca">
+						<form action="">
+							<input id="busca2" name="busca"type="search" placeholder="Buscar">
+							<input id="lupa"type="image" src="../img/lupa.png">	
+						</form>
+					</div>
+					<div id="sloganc">
+						<p id="slogan">Praticidade e Comodidade em um só lugar!</p>
+					</div>
+					<!-- Implementação de um carrionho de compras se for necessário -->
+					<div id="carrinho">
+						<!-- A ancora deve redirecionar para a pagina do carrinho (carrinho.html)-->
+						<a href="meuCarrinho.html">
+							<img src="../img/carrinho.png">
+							<!-- ao adicionar um item no carrinho a imagem dele deve ser alterada pela imagem abaixo:
+							<img src="img/carrinhoi2.png">-->
+							<p id="mycar">Meu Carrinho</p>
+							<p id="numerocar">00<p>
+							<p id="itemcar">Item</p>
+						</a>						
+					</div>
+				</div>
+			</div>v>
+		<div id="montagem">
+			<form id="monta" action="">
+				<h1>Linha de montagem do computador ideal</h1>
+				<fieldset>
+					<legend>Peças:</legend>
+						<h5>Para montar o computador ideal é necessario selecionar as peças a baixo. </h5>
+					<div id="produtos">
+						
+						<p>PLACA MAE </p>
+						<select name="PLACA MAE">
+							<option value="NULL" selected="selected">Selecione</option>
+							<option value="intel">INTEL ASUS socket 1150</option>
+							<option value="amd">AMD CHIPSET socket AM3+</option>
+						</select><br>
+						<h5>ESCOLHA DE ACORDO COM O MODELO DO SOCKET:</h5>
+						<table>
+						<tr>
+						<td>
+						<select name="INTEL">
+							<option value ="NULL" selected="selected">PROCESSADORES INTEL</option>
+							<option title ="socket:1150 nucleos:4 Clock Maximo:3.4Ghz">i5 4460 R$989.00</option>
+							<option title="socket: 1150 nucleos:4 Clock Maximo 4.0Ghz">i7-4790 R$ 1.669.88</option>
+						</select>
+						</td>
+						<td>
+						<select name="AMD">
+							<option value "NULL" selected="selected">PROCESSADORE AMD</option>
+							<option title ="socket:AM3+ nucleos:8 Clock Maximo:4.2Ghz">FX-8350  R$829.00</option>
+							<option title="Socket:AM3+ Nucleos:4 Clock Maximo: 3.8Ghz">FX 4300 R450.00</option>
+						</select>
+						</td>
+						</tr>
+						</table>
+						<br>
+						<h5>Memoria ram </h5>
+						<select name="MEMORIA">
+							<OPTION VALUE="NULL" selected="selected">MEMORIAS</OPTION>
+							<OPTION title="1600Mhz">Kingston HYPERX 4GB R$139.99</OPTION>
+							<OPTION title="1899Mhz">Kingston HYPERX FURY 8GB R$279.90</OPTION>
+						</select>
+						<br>
+						<h5>Placa de video</h5>
+						<select name="PLACA DE VIDEO">
+							<OPTION VALUE="NULL" selected="selected">PLACA DE VIDEO</OPTION>
+							<OPTION title="MEMORIA DE 1GB GDDR5 BARRAMENTO 128 BITS ">Geforce GTX750 R$559.90</OPTION>
+							<OPTION title="MEMORIA DE 2GB GDDR5 BARRAMENTO 128 BITS">GTX960 R$982.00</OPTION>
+						</select>
+						<br>
+						<h5>Hard Disk - SSD</h5>
+						<select name="HD">
+							<option value="NULL" selected="selected">HD/SSD</option>
+							<option title="7200RPM ">KINGSTON 500GB R$200.00</option>
+							<OPTION  title="5400RPM">KINGSTON 1TB R$300.00</OPTION>
+							<option title="V300 Series Standalone  450MB/s">SSD Kingston 120GB </option>
+						</select>
+						<br>
+
+					</div>
+					</fieldset>
+			
+			</form>
+		</div>
+	</body>
+	<footer>
+		<!-- Rodapé da página com formas de pagamento -->
+		<div id="footer">
+			<div id="pay">
+				<p>Formas de pagamento</p>
+			</div>
+			<div id="paymod">
+				<img id="master"src="../img/master.png">
+				<img id="visa"src="../img/visa.png">
+				<img id="gold"src="../img/gold.png">
+				<img id="payboleto"src="../img/boleto.png">
+			</div>
+			<div id="paytype">
+				<p id="cards">Catões</p>
+				<p id="others">Outros</p>
+				<p id="boleto">Boleto</p>
+			</div>
+		</div>
+		<style type="text/css">
+		<!--
+			#footer{
+				bottom: -50%;
+			}
+		-->
+		</style>
+	</footer>
+</html>
