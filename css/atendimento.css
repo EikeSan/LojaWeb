@@ -15,16 +15,18 @@
 
 #atendimentoCaixaLink nav{
 	margin: 2%;
+	width: 340px;
 }
 #atendimentoCaixaLink img{
 	margin: 0 1%;
-	width: 7%;
+	width: 27%;
 }
 #atendimentoCaixaLink ul{
 	list-style: none;
 }
 #atendimentoCaixaLink li{
 	margin: 1% 0;
+	
 }
 #atendimentoCaixaLink  a:visited{
 	color: #000000;
@@ -37,5 +39,10 @@
 #atendimentoCaixaLink a:hover{
 	color:#d55534;
 	text-decoration: underline;
+}
+#atendimentoCaixaLink p {
+	width: 200px;
+	float: right;
+	padding-top: 20px;
 }
 
