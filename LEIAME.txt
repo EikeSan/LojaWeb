@@ -1,0 +1,18 @@
+WebPlace
+website: http://webplace.xyz/
+github:https://github.com/EikeSan/LojaWeb
+email: contato@webplace.xyz
+----------------------------desenvolvido por:-----------------------------------------------
+
+->Diogo Figueredo Bento		email:diogofb93@hotmail.com	
+->Eike Duarte Santiago		email:eikesantz@hotmail.com
+->João Pedro Ramos Pradines	email:pradinesjpr@gmail.com
+
+----------------------Informações para o usuario-------------------------------------
+
+Ao acessar(ou clicar no index.html) a url do webplace e clicar em "sobre nos" o usuario ira ter uma breve introduçao do que é o webplace.
+Na pagina inicial o usuario vai se deparar com um banner indicando para Montar seu computador.
+
+-----------------------informações para funcionario---------------------------------
+Por enquanto para cadastrar um novo funcionario o gerente deve entrar pela url:http://webplace.xyz/html/cadastroFuncionario.html ou acessar 
+a pastar html e clicar em cadastrofuncionario.html
