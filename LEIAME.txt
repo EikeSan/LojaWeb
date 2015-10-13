@@ -9,7 +9,8 @@ email: contato@webplace.xyz
 ->João Pedro Ramos Pradines	email:pradinesjpr@gmail.com
 
 ----------------------Informações para o usuario-------------------------------------
-
+Para instalar-> extraia a pasta no servidor xampp. c:\xampp\htdocs\
+Para acessar -> inserir a url localhost ou o ip 127.0.0.1
 Ao acessar(ou clicar no index.html) a url do webplace e clicar em "sobre nos" o usuario ira ter uma breve introduçao do que é o webplace.
 Na pagina inicial o usuario vai se deparar com um banner indicando para Montar seu computador.
 

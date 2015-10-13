@@ -2,7 +2,7 @@ h1{
 	color: #787878;
 }
 
-#blabla{
+.blabla{
 	text-align: justify;
 	margin: 5% 2%;
 	color:black;
@@ -12,4 +12,17 @@ h1{
 }
 #sobreNosCaixa{
 	border: solid 1px;
+}
+
+.blabla  a:visited{
+	color: #000000;
+	text-decoration: none;
+}
+.blabla a:link{
+	text-decoration: none;
+	color: #000000;
+}
+.blabla a:hover{
+	color:#d55534;
+	text-decoration: underline;
 }
