@@ -1,3 +1,9 @@
+<?php
+include "config.php";
+    
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,44 +24,54 @@
 						<ul>
 							<li>
 								<!-- Link para voltar a pagina inicial -->
-								<a href="index.html">Início</a>
+								<a href="index.php">Início</a>
 							</li>
 							<li>
 								<!-- Link para pagina com produtos disponiveis -->
-								<a href="html/produtos.html">Produtos</a>
+								<a href="html/produtos.php">Produtos</a>
 							</li>
 							<li>
 								<!-- Link para realizar atendimento com um vendedor ou suporte-->
-								<a href="html/atendimento.html">Atendimento</a>
+								<a href="html/atendimento.php">Atendimento</a>
 							</li>
 							<li>
 								<!-- Link para usuario alterar informcoes da sua conta -->
-								<a href="html/minhaConta.html">Minha Conta</a>
+								<a href="html/minhaConta.php">Minha Conta</a>
 							</li>
 							<li>
 								<!-- Link para uma pagina informativa sobre a empresa-->
-								<a href="html/sobrenos.html">Sobre Nós</a>
+								<a href="html/sobrenos.php">Sobre Nós</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div id="headercenter">
 					<div id="headerlogo">
-						<a href="index.html">
+						<a href="index.php">
 							<img id="logo"src="img/loja.png"/>
 							<h6>WebPlace</h6>
 						</a>
 					</div>
 					<div id="paginalogin">
-						<p id="blink">;)</p><span id="paginaLoginMsg">
-						<p id="wellcome">Bem-Vindo, realize o seu:</p>
-						<p id="plc">
-							<!-- Link para pagina de login-->
+					<?php
+						 if(!isset($_SESSION['login'])){ ?>
+
+							<p id="blink">;)</p><span id="paginaLoginMsg">
+							<p id="wellcome">Bem-Vindo, realize o seu:</p>
+							<p id="plc">					
 							<a id="entre"href="html/login.html">login</a> 
 							ou 
-							<!--Link para pagina de cadastro-->
-							<a id="cadastro"href="html/cadastro.html">Cadastro</a>.
-						</p></span>
+							<a id="cadastro"href="html/cadastro.php">Cadastro</a>.
+							</p></span>
+						<?php }
+						else{
+						$nome = $_SESSION['login'];
+               		    $nome = ucfirst(strtolower($nome));
+						echo "<label class='conecc'><br>Usuario:</label>" . "<label id='nome_conec' class='nome_conec'>" . $nome . "</label>"; 
+						echo "<a href='logout.php'><label class='desconect'><br>Desconectar</label></a>";
+						}
+						
+						?>
 					</div>
 					<div id="busca">
 						<form action="">
@@ -69,7 +85,7 @@
 					<!-- Implementação de um carrionho de compras se for necessário -->
 					<div id="carrinho">
 						<!-- A ancora deve redirecionar para a pagina do carrinho (carrinho.html)-->
-						<a href="html/meuCarrinho.html">
+						<a href="html/meuCarrinho.php">
 							<img src="img/carrinho.png">
 							<!-- ao adicionar um item no carrinho a imagem dele deve ser alterada pela imagem abaixo:
 							<img src="img/carrinhoi2.png">-->
@@ -83,7 +99,7 @@
 			<!-- Utilizar JavaScript para ficar com um efeito de SlideShow-->
 			<div id="banner">
 				<div id="bannerm">
-					<a id="promo" href="html/produtos.html"><img class="item"src="img/banner.png"></a>
+					<a id="promo" href="html/produtos.php"><img class="item"src="img/banner.png"></a>
 				</div>
 			</div>
 		<div>

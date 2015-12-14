@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<p id="blink">;)</p><span id="paginaLoginMsg">
+							<p id="wellcome">Bem-Vindo, realize o seu:</p>
+							<p id="plc">					
+							<a id="entre"href="html/login.html">login</a> 
+							ou 
+							<a id="cadastro"href="html/cadastro.php">Cadastro</a>.
+							</p></span>
+</html>

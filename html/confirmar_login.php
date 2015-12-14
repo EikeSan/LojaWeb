@@ -13,7 +13,11 @@ if ( $contagem == 1 ) {
   setcookie ("login", $login); 
   setcookie ("senha", $senha2); 
   echo "Usuário logado.";
+  session_start();
+            $_SESSION['login']=$login;
+            $_SESSION['senha']=$senha2;
+           echo "<meta http-equiv=refresh content='1;url=../index.php'>";
   } else {
-  echo "Login ou senha inválidos. <a href=java script:history.go(-1)>Clique aqui para voltar.</a>"; /
+  echo "Login ou senha inválidos. "; 
   }
 ?>
