@@ -40,7 +40,7 @@ include "config.php";
 							</li>
 							<li>
 								<!-- Link para uma pagina informativa sobre a empresa-->
-								<a href="sobrenos.html">Sobre Nós</a>
+								<a href="sobrenos.php">Sobre Nós</a>
 							</li>
 						</ul>
 					</div>
@@ -97,54 +97,75 @@ include "config.php";
 				</div>
 			</div>
 		<div id="montagem">
-			<form id="monta" action="">
+				<div id="monta">
 				<fieldset>
 					<legend>Computadores:</legend>
 					<div id="produtos">
 						<fieldset>
+							<form id="pedido" method="post"  action="pedido.php">
 							<legend>STRIKE</legend>
 							<div id="divesq">
 							<input id="imagemcheck"type="image" src="../img/produtos/gabinete1.png">
 						</div>
 							 <div id ="divdir">
 							 	<ul>
-							<li><h4>i3 1212</h4></li>
-							<li><h4>placa de video Geforce gtx 150000</h4></li>
-							<li><h4>memoria :35GB DDR8</h4></li>
-							<li><h4>Gabinete strike modelo:21</h4></li>
-							<li><h4>Fonte corsair 650watts</h4></li>
-							<li><H3>Valor=R$3500,00</H3></li>
-							</ul>		
-							<?php 		
+							<?php 
+								include "config.php";
+								$valor_total=0;
+								$COD_PRODUTO=8;
+								$QTDE=1;
+								$sql = mysql_query("Select ALL NOME_PRODUTO, VALOR_UNITARIO From t_produto where COD_PRODUTO =3 OR COD_PRODUTO= 4 OR COD_PRODUTO = 5 OR COD_PRODUTO = 6 OR COD_PRODUTO= 7");
+								while ($exibe = mysql_fetch_assoc($sql) ) { // Obtém os dados da linha atual e avança para o próximo registro
+  									echo "<li><h4>".$exibe["NOME_PRODUTO"] . "   R$ " . $exibe["VALOR_UNITARIO"]."</h4></li>";
+  									$valor_total=$valor_total+$exibe["VALOR_UNITARIO"];
+								}
+								echo "O valor total: R$".$valor_total . "<br>";	
 							if(!isset($_SESSION['login'])){	?>
 								<a href="login.html">
 									<img src="../img/botao.png"/>
 							 <?php }
 						else{ ?>
-
-							<form id="pedido" method="post"  action="pedido.php" name="Strike">
+						<input type="hidden" name="valor_total" value="<?php echo $valor_total;?>">
+						<input type="hidden" name="QTDE" value="<?php echo $QTDE;?>">
+						<input type="hidden" name="COD_PRODUTO" value="<?php echo $COD_PRODUTO;?>">
 							<input id="enviar"type="submit" value="COMPRAR">
-							
+							</form>
 						<?php }?>
-
+						</ul>
 						</div>
 						</fieldset>
 
 						<fieldset>
+							<form id="pedido" method="post"  action="pedido.php">
 							<legend>PHANTOM</legend>
 							<div id="divesq">
 							<input id="imagemcheck"type="image" src="../img/produtos/gabinete2.png">
-						</div>
-							 <div id ="divdir">
-							 	<ul>
-							<li><h4>i10 1212</h4></li>
-							<li><h4>placa de video Geforce gtx 150000TI</h4></li>
-							<li><h4>memoria :35GB DDR8</h4></li>
-							<li><h4>Gabinete strike modelo:69</h4></li>
-							<li><h4>Fonte corsair 750watts</h4></li>
-							<li><h3>Valor:um pouco mais caro</h3></li>
-							</ul>
-							<input type="submit" value="COMPRAR">
+						<!-- </div>
+						<div id ="divdir"> -->
+							<ul>
+								<?php 
+								include "config.php";
+								$valor_total=0;
+								$COD_PRODUTO=14;
+								$QTDE=1;
+								$sql = mysql_query("Select ALL NOME_PRODUTO, VALOR_UNITARIO From t_produto where COD_PRODUTO =9 OR COD_PRODUTO= 10 OR COD_PRODUTO = 11 OR COD_PRODUTO = 12 OR COD_PRODUTO= 13");
+								while ($exibe = mysql_fetch_assoc($sql) ) { // Obtém os dados da linha atual e avança para o próximo registro
+  									echo "<li><h4>".$exibe["NOME_PRODUTO"] . "   R$ " . $exibe["VALOR_UNITARIO"]."</h4></li>";
+  									$valor_total=$valor_total+$exibe["VALOR_UNITARIO"];
+								}
+								echo "O valor total: R$".$valor_total . "<br>";	
+							if(!isset($_SESSION['login'])){	?>
+								<a href="login.html">
+									<img src="../img/botao.png"/>
+							 <?php }
+						else{ ?>
+						<input type="hidden" name="valor_total" value="<?php echo $valor_total;?>">
+						<input type="hidden" name="QTDE" value="<?php echo $QTDE;?>">
+						<input type="hidden" name="COD_PRODUTO" value="<?php echo $COD_PRODUTO;?>">
+							<input id="enviar"type="submit" value="COMPRAR">
+							</form>
+						<?php }?>
+					</ul>
 						</div>
 						</fieldset>
 						<fieldset>
@@ -152,8 +173,7 @@ include "config.php";
 						</fieldset>
 					</div>
 					</fieldset>
-			
-			</form>
+			</div>
 		</div>
 	</body>
 	<footer>

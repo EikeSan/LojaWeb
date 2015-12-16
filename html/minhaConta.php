@@ -23,23 +23,23 @@ include "config.php";
 						<ul>
 							<li>
 								<!-- Link para voltar a pagina inicial -->
-								<a href="../index.html">Início</a>
+								<a href="../index.php">Início</a>
 							</li>
 							<li>
 								<!-- Link para pagina com produtos disponiveis -->
-								<a href="produtos.html">Produtos</a>
+								<a href="produtos.php">Produtos</a>
 							</li>
 							<li>
 								<!-- Link para realizar atendimento com um vendedor ou suporte-->
-								<a href="atendimento.html">Atendimento</a>
+								<a href="atendimento.php">Atendimento</a>
 							</li>
 							<li>
 								<!-- Link para usuario alterar informcoes da sua conta -->
-								<a href="minhaConta.html">Minha Conta</a>
+								<a href="minhaConta.php">Minha Conta</a>
 							</li>
 							<li>
 								<!-- Link para uma pagina informativa sobre a empresa-->
-								<a href="sobrenos.html">Sobre Nós</a>
+								<a href="sobrenos.php">Sobre Nós</a>
 							</li>
 						</ul>
 					</div>
@@ -102,17 +102,27 @@ include "config.php";
 						<div id="minhaContaCaixaInfo">
 							<img id="minhaContaCaixaInfoImg" src="../img/user.png">
 							<div id="minhaContaCaixaInfoTxt">
-								<?php 
-								$nome = $_SESSION['login'];
-               		 		    $nome = ucfirst(strtolower($nome));
-								$query = sprintf("SELECT NOME FROM t_cliente where LOGIN=$nome");
-								$dados = mysql_query($query);
-								echo $dados['NOME'];
+									<?php
+						 if(!isset($_SESSION['login'])){ ?>
 
-								?>
-								<a id="sair" href="">
-									<p>Sair</p>
-								</a>
+							<p id="blink">;)</p><span id="paginaLoginMsg">
+							<p id="wellcome">Bem-Vindo, realize o seu:</p>
+							<p id="plc">					
+							<a id="entre"href="login.html">login</a> 
+							ou 
+							<a id="cadastro"href="cadastro.php">Cadastro</a>.
+							</p></span>
+						<?php }
+						else{
+						$login = $_SESSION['login'];
+											$pedidos= mysql_query("Select NOME From t_cliente where login='$login'");
+								while ($exibir = mysql_fetch_assoc($pedidos) ) { // Obtém os dados da linha atual e avança para o próximo registro
+  									echo "Nome completo: ".$exibir["NOME"];
+								}
+							}
+						
+						?>
+
 							</div>
 						</div>
 
@@ -142,11 +152,21 @@ include "config.php";
 
 						<div id="minhaContaCaixaPedidos" >
 							<h2>Meus Pedidos</h2>
-							<nav>
+								<nav>
 								<ul>
 									<li>
-										<a href="">
-											<p>Pedidos em andamento</p>
+										<p>Pedidos realizados</p>
+										<?php
+										 if(!isset($_SESSION['login'])){ 
+										 	echo"Usuario nao logado Por favor fazer login";
+										 }else{
+											$login = $_SESSION['login'];
+											$pedidos= mysql_query("Select ALL COD_NF, VALOR_UNITARIO From t_nf where login='$login'");
+								while ($exibir = mysql_fetch_assoc($pedidos) ) { // Obtém os dados da linha atual e avança para o próximo registro
+  									echo "Codigo da nota fiscal ".$exibir["COD_NF"] . "Valor total:  R$ " . $exibir["VALOR_UNITARIO"]."<br>";
+								}
+							}
+								?>
 										</a>
 									</li>
 									<li>
@@ -154,11 +174,7 @@ include "config.php";
 											<p>Pedidos cancelados</p>
 										</a>
 									</li>
-									<li>
-										<a href="">
-											<p>Pedidos finalizados</p>
-										</a>
-									</li>
+
 								</ul>
 							</nav>
 						</div>

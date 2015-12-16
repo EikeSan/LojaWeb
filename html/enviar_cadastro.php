@@ -41,9 +41,10 @@ include "config.php";
                                      <?php
                                                                                         if($sql){
                                                                                             echo "<span class='sucess'>Cadastro Realizado com sucesso</span>";
-                                                                                            echo "<meta http-equiv=refresh content='3;url=..\\index.html'>";
+                                                                                            echo "<meta http-equiv=refresh content='1;url=..\\index.php'>";
                                                                                             }else{
                                                                                             echo "Falha ao realizar o cadastro";
+                                                                                             echo "<meta http-equiv=refresh content='1;url=cadastro.html'>";
                                                                                             }
                                                                                         ?>   
                                         

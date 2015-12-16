@@ -17,44 +17,54 @@
 						<ul>
 							<li>
 								<!-- Link para voltar a pagina inicial -->
-								<a href="../index.html">Início</a>
+								<a href="../index.php">Início</a>
 							</li>
 							<li>
 								<!-- Link para pagina com produtos disponiveis -->
-								<a href="produtos.html">Produtos</a>
+								<a href="produtos.php">Produtos</a>
 							</li>
 							<li>
 								<!-- Link para realizar atendimento com um vendedor ou suporte-->
-								<a href="atendimento.html">Atendimento</a>
+								<a href="atendimento.php">Atendimento</a>
 							</li>
 							<li>
 								<!-- Link para usuario alterar informcoes da sua conta -->
-								<a href="minhaConta.html">Minha Conta</a>
+								<a href="minhaConta.php">Minha Conta</a>
 							</li>
 							<li>
 								<!-- Link para uma pagina informativa sobre a empresa-->
-								<a href="sobrenos.html">Sobre Nós</a>
+								<a href="sobrenos.php">Sobre Nós</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div id="headercenter">
 					<div id="headerlogo">
-						<a href="../index.html">
+						<a href="../index.php">
 							<img id="logo"src="../img/loja.png"/>
 							<h6>WebPlace</h6>
 						</a>
 					</div>
 					<div id="paginalogin">
-						<p id="blink">;)</p>
-						<p id="wellcome">Bem-Vindo, realize o seu:</p>
-						<p id="plc">
-							<!-- Link para pagina de login-->
+						<?php
+						 if(!isset($_SESSION['login'])){ ?>
+
+							<p id="blink">;)</p><span id="paginaLoginMsg">
+							<p id="wellcome">Bem-Vindo, realize o seu:</p>
+							<p id="plc">					
 							<a id="entre"href="login.html">login</a> 
 							ou 
-							<!--Link para pagina de cadastro-->
-							<a id="cadastro"href="cadastro.html">Cadastro</a>.
-						</p>
+							<a id="cadastro"href="cadastro.php">Cadastro</a>.
+							</p></span>
+						<?php }
+						else{
+						$nome = $_SESSION['login'];
+               		    $nome = ucfirst(strtolower($nome));
+						echo "<label class='conecc'><br>Usuario:</label>" . "<label id='nome_conec' class='nome_conec'>" . $nome . "</label>"; 
+						echo "<a href='logout.php'><label class='desconect'><br>Desconectar</label></a>";
+						}
+						
+						?>
 					</div>
 					<div id="busca">
 						<form action="">

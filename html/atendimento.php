@@ -22,30 +22,30 @@ include "config.php";
 						<ul>
 							<li>
 								<!-- Link para voltar a pagina inicial -->
-								<a href="../index.html">Início</a>
+								<a href="../index.php">Início</a>
 							</li>
 							<li>
 								<!-- Link para pagina com produtos disponiveis -->
-								<a href="produtos.html">Produtos</a>
+								<a href="produtos.php">Produtos</a>
 							</li>
 							<li>
 								<!-- Link para realizar atendimento com um vendedor ou suporte-->
-								<a href="atendimento.html">Atendimento</a>
+								<a href="atendimento.php">Atendimento</a>
 							</li>
 							<li>
 								<!-- Link para usuario alterar informcoes da sua conta -->
-								<a href="minhaConta.html">Minha Conta</a>
+								<a href="minhaConta.php">Minha Conta</a>
 							</li>
 							<li>
 								<!-- Link para uma pagina informativa sobre a empresa-->
-								<a href="sobrenos.html">Sobre Nós</a>
+								<a href="sobrenos.php">Sobre Nós</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div id="headercenter">
 					<div id="headerlogo">
-						<a href="../index.html">
+						<a href="../index.php">
 							<img id="logo"src="../img/loja.png"/>
 							<h6>WebPlace</h6>
 						</a>

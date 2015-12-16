@@ -40,7 +40,7 @@ include "config.php";
 							</li>
 							<li>
 								<!-- Link para uma pagina informativa sobre a empresa-->
-								<a href="html/sobrenos.php">Sobre Nós</a>
+								<a href="html/sobrenos.html">Sobre Nós</a>
 							</li>
 						</ul>
 					</div>
@@ -68,7 +68,7 @@ include "config.php";
 						$nome = $_SESSION['login'];
                		    $nome = ucfirst(strtolower($nome));
 						echo "<label class='conecc'><br>Usuario:</label>" . "<label id='nome_conec' class='nome_conec'>" . $nome . "</label>"; 
-						echo "<a href='logout.php'><label class='desconect'><br>Desconectar</label></a>";
+						echo "<a href='html/logout.php'><label class='desconect'><br>Desconectar</label></a>";
 						}
 						
 						?>
